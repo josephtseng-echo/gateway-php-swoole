@@ -1,0 +1,24 @@
+{
+    "license": "MIT",
+    "authors": [{
+        "name": "josephzeng",
+        "email": "josephzeng36@gmail.com"
+    }],
+    "require": {
+        "silex/silex": "~2.0",
+        "monolog/monolog": "^1.23",
+        "nesbot/carbon": "^1.22"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "5.7.*"
+    },
+    "autoload": {
+        "psr-4": {
+			"ServerBundle\\": "src/bundles/ServerBundle",
+			"ApiBundle\\": "src/bundles/ApiBundle",
+			"Lxt\\": "src/lib/Lxt",
+			"GPBMetadata\\": "src/proto/GPBMetadata",
+			"Proto\\": "src/proto/Proto"
+        }
+    }
+}
